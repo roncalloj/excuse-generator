@@ -1,11 +1,18 @@
-/* eslint-disable */
-import "bootstrap";
-import "./style.css";
+let who = ["The dog", "My grandma", "His turtle", "My bird"];
+let action = ["ate", "peed", "crushed", "broke"];
+let what = ["my homework", "the keys", "the car"];
+let when = [
+  "before the class",
+  "right on time",
+  "when I finished",
+  "during my lunch",
+  "while I was praying"
+];
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+var a = Math.floor(Math.random() * who.length);
+var b = Math.floor(Math.random() * action.length);
+var c = Math.floor(Math.random() * what.length);
+var d = Math.floor(Math.random() * when.length);
 
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+let arrExcuse = [who[a] + " " + action[b] + " " + what[c] + " " + when[d]];
+document.getElementById("excusa").innerHTML = arrExcuse;
